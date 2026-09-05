@@ -1,0 +1,6 @@
+{
+  "title": "Web Dashers",
+  "version": "local",
+  "blurb": "Phaser fan mod of the Geometry Dash web demo: main levels plus a built-in level creator. Online level search needs the internet.",
+  "splashTarget": "assets/scripts/core/main.js"
+}

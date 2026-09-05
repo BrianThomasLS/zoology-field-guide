@@ -1,0 +1,91 @@
+<linker>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Allegiance" preserve="all" />
+    <type fullname="Core.Utilities.Poolable" preserve="all" />
+    <type fullname="DestroyOnReset" preserve="all" />
+    <type fullname="DynamicBone" preserve="all" />
+    <type fullname="Faction" preserve="all" />
+    <type fullname="Paradyme.Achievements.Achievement" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.Voxel" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.VoxelBlockWorld" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.VoxelChunk" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.VoxelCurved" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.VoxelGasGiant" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.VoxelLivingPlanet" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.Weapons.BeamPulse" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.Weapons.DebrisPiece" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.Weapons.DragonBreath" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.Weapons.LaserBlast" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.Weapons.LaserSwordThrow" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.Weapons.Nuke" preserve="all" />
+    <type fullname="Paradyme.PlanetSmash.Weapons.PlayerFighter" preserve="all" />
+    <type fullname="Paradyme.Weapons.WeaponData" preserve="all" />
+    <type fullname="PlanetObject" preserve="all" />
+    <type fullname="PlanetRing" preserve="all" />
+    <type fullname="PlanetSmash.VoxelTypeLiving" preserve="all" />
+    <type fullname="PlanetSmash.VoxelTypeSnowman" preserve="all" />
+    <type fullname="PlanetSmash.VoxelTypeStandard" preserve="all" />
+    <type fullname="PlanetSmash.VoxelTypeStar" preserve="all" />
+    <type fullname="PlanetSmash.VoxelTypeUneven" preserve="all" />
+    <type fullname="PlanetSubType" preserve="all" />
+    <type fullname="SwitchMesh" preserve="all" />
+    <type fullname="VoxelCache" preserve="all" />
+    <type fullname="VoxelTypeCandyCane" preserve="all" />
+    <type fullname="VoxelTypeChistmasTree" preserve="all" />
+    <type fullname="VoxelTypeCube" preserve="all" />
+    <type fullname="VoxelTypeCylinder" preserve="all" />
+    <type fullname="VoxelTypeDonut" preserve="all" />
+    <type fullname="VoxelTypeFlat" preserve="all" />
+    <type fullname="VoxelTypeGingerbread" preserve="all" />
+    <type fullname="VoxelTypeHollow" preserve="all" />
+    <type fullname="VoxelTypePumpkin" preserve="all" />
+    <type fullname="VoxelTypeRingworld" preserve="all" />
+    <type fullname="WeaponSpawner" preserve="all" />
+    <type fullname="GateDetail" preserve="nothing" serialized="true" />
+    <type fullname="PlanetObject/CoreTemp" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioClip" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.LineRenderer" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.SkinnedMeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.TextAsset" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.TrailRenderer" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.Rigidbody" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
+  </assembly>
+</linker>
