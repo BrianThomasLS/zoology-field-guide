@@ -1,0 +1,2807 @@
+{
+    "IsBonusLevel": true,
+    "Dimensions": { "x": 17, "y": 25 },
+    "TextureGridTiling": { "x": 0.0, "y": 0.0 },
+    "TextureOffset": { "x": 0.0, "y": 0.0 },
+    "EnemyBottomColor": { "x": 0.0, "y": 0.0, "z": 0.0 },
+    "PaintedCoordinates": [],
+    "WallModels": [
+        {
+            "Position": { "x": 8.0, "y": 5.5, "z": 0.0 },
+            "Rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+            "Scale": { "x": 3.0, "y": 4.0, "z": 3.0 }
+        },
+        {
+            "Position": { "x": 8.0, "y": 22.0, "z": 0.0 },
+            "Rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+            "Scale": { "x": 3.0, "y": 3.0, "z": 3.0 }
+        }
+    ],
+    "EnemyModels": [
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 12.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 14.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 9.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 8.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 7.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 16.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 9.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 9.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 8.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 8.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 7.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 7.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 17.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 18.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 9.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 8.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 7.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 9.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 8.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 7.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 5.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 4.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 2.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 1.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 19.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 16.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 15.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 20.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 14.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 13.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 12.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 10.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 21.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 22.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 6.0, "y": 15.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 23.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 3.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 11.0, "y": 24.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        },
+        {
+            "Speed": 0.800000011920929,
+            "IsObstacle": false,
+            "IsRandom": false,
+            "IsSpheric": false,
+            "Path": [{ "x": 0.0, "y": -8.0 }],
+            "Scale": {
+                "x": 0.949999988079071,
+                "y": 0.949999988079071,
+                "z": 0.949999988079071
+            },
+            "StartPosition": { "x": 0.0, "y": 13.0, "z": -0.9750000238418579 },
+            "StartRotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+        }
+    ],
+    "GemModels": [
+        {
+            "Position": { "x": 8.0, "y": 24.0, "z": -1.0 },
+            "Rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+            "Scale": { "x": 1.0, "y": 1.0, "z": 1.0 }
+        },
+        {
+            "Position": { "x": 7.0, "y": 24.0, "z": -1.0 },
+            "Rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+            "Scale": { "x": 1.0, "y": 1.0, "z": 1.0 }
+        },
+        {
+            "Position": { "x": 9.0, "y": 24.0, "z": -1.0 },
+            "Rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+            "Scale": { "x": 1.0, "y": 1.0, "z": 1.0 }
+        },
+        {
+            "Position": { "x": 16.0, "y": 5.0, "z": -1.0 },
+            "Rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+            "Scale": { "x": 1.0, "y": 1.0, "z": 1.0 }
+        },
+        {
+            "Position": { "x": 0.0, "y": 5.0, "z": -1.0 },
+            "Rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+            "Scale": { "x": 1.0, "y": 1.0, "z": 1.0 }
+        }
+    ]
+}

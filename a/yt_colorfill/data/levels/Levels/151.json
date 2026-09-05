@@ -1,0 +1,17 @@
+{
+    "IsBonusLevel": false,
+    "Dimensions": { "x": 11, "y": 11 },
+    "TextureGridTiling": { "x": 0.0, "y": 0.0 },
+    "TextureOffset": { "x": 0.0, "y": 0.0 },
+    "EnemyBottomColor": { "x": 0.0, "y": 0.0, "z": 0.0 },
+    "PaintedCoordinates": [{ "x": 5, "y": 0 }],
+    "WallModels": [
+        {
+            "Position": { "x": 5.0, "y": 5.0, "z": 0.0 },
+            "Rotation": { "x": 0.0, "y": 0.0, "z": 270.0 },
+            "Scale": { "x": 5.0, "y": 5.0, "z": 3.0 }
+        }
+    ],
+    "EnemyModels": [],
+    "GemModels": []
+}

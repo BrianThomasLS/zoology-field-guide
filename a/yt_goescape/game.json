@@ -1,0 +1,6 @@
+{
+  "title": "Go Escape",
+  "version": "1.0",
+  "blurb": "Timing-based jump platformer across 260 levels.",
+  "splashTarget": "game.js"
+}

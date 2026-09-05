@@ -1,0 +1,639 @@
+{
+  "frames": {
+    "challenges/progressbar": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 1480,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1480,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 1480,
+        "h": 95
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/progressbar_fill": {
+      "frame": {
+        "x": 2,
+        "y": 101,
+        "w": 1469,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1469,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 1469,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/blueback": {
+      "frame": {
+        "x": 1486,
+        "y": 2,
+        "w": 512,
+        "h": 512
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 512
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/progressbar_mask": {
+      "frame": {
+        "x": 2,
+        "y": 518,
+        "w": 1469,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1469,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 1469,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "progress-bars/gradient": {
+      "frame": {
+        "x": 2,
+        "y": 606,
+        "w": 1000,
+        "h": 939
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1000,
+        "h": 939
+      },
+      "sourceSize": {
+        "w": 1000,
+        "h": 1000
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/progressempty": {
+      "frame": {
+        "x": 1475,
+        "y": 518,
+        "w": 512,
+        "h": 109
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 73,
+        "w": 512,
+        "h": 109
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 256
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/icons/5": {
+      "frame": {
+        "x": 2,
+        "y": 1549,
+        "w": 395,
+        "h": 479
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 58,
+        "y": 25,
+        "w": 395,
+        "h": 479
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/play": {
+      "frame": {
+        "x": 2,
+        "y": 189,
+        "w": 218,
+        "h": 241
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 19,
+        "y": 7,
+        "w": 218,
+        "h": 241
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 256
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/back1": {
+      "frame": {
+        "x": 1006,
+        "y": 631,
+        "w": 948,
+        "h": 394
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 38,
+        "y": 59,
+        "w": 948,
+        "h": 394
+      },
+      "sourceSize": {
+        "w": 1024,
+        "h": 512
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/icons/6": {
+      "frame": {
+        "x": 401,
+        "y": 1549,
+        "w": 432,
+        "h": 479
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 39,
+        "y": 18,
+        "w": 432,
+        "h": 479
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "progress-bars/progress_base": {
+      "frame": {
+        "x": 2,
+        "y": 434,
+        "w": 506,
+        "h": 39
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 44,
+        "w": 506,
+        "h": 39
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/icons/0": {
+      "frame": {
+        "x": 1006,
+        "y": 1029,
+        "w": 401,
+        "h": 512
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 0,
+        "w": 401,
+        "h": 512
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/sun": {
+      "frame": {
+        "x": 1006,
+        "y": 1545,
+        "w": 501,
+        "h": 501
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 6,
+        "w": 501,
+        "h": 501
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/icons/1": {
+      "frame": {
+        "x": 1411,
+        "y": 1029,
+        "w": 401,
+        "h": 512
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 0,
+        "w": 401,
+        "h": 512
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "progress-bars/alternate_bar_fill": {
+      "frame": {
+        "x": 1006,
+        "y": 606,
+        "w": 234,
+        "h": 17
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 55,
+        "w": 234,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 241,
+        "h": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "progress-bars/double_bar": {
+      "frame": {
+        "x": 2,
+        "y": 477,
+        "w": 247,
+        "h": 28
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 50,
+        "w": 247,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/unlock": {
+      "frame": {
+        "x": 224,
+        "y": 189,
+        "w": 173,
+        "h": 231
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 41,
+        "y": 12,
+        "w": 173,
+        "h": 231
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 256
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/icons/11": {
+      "frame": {
+        "x": 1511,
+        "y": 1545,
+        "w": 421,
+        "h": 470
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 60,
+        "y": 21,
+        "w": 421,
+        "h": 470
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 512
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/home": {
+      "frame": {
+        "x": 512,
+        "y": 189,
+        "w": 237,
+        "h": 226
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 14,
+        "w": 237,
+        "h": 226
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 256
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/progressfill": {
+      "frame": {
+        "x": 512,
+        "y": 419,
+        "w": 493,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 83,
+        "w": 493,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 256
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "progress-bars/double_bar_fill": {
+      "frame": {
+        "x": 1511,
+        "y": 2019,
+        "w": 245,
+        "h": 25
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 52,
+        "w": 245,
+        "h": 25
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "progress-bars/double_bar_mask": {
+      "frame": {
+        "x": 253,
+        "y": 477,
+        "w": 243,
+        "h": 25
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 243,
+        "h": 25
+      },
+      "sourceSize": {
+        "w": 243,
+        "h": 25
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/progress/progressbar_fin": {
+      "frame": {
+        "x": 837,
+        "y": 1549,
+        "w": 140,
+        "h": 139
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 139
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 139
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/progress/progressbar_circle": {
+      "frame": {
+        "x": 1816,
+        "y": 1029,
+        "w": 136,
+        "h": 137
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 137
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 137
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "shop/bonusback": {
+      "frame": {
+        "x": 753,
+        "y": 189,
+        "w": 512,
+        "h": 129
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 63,
+        "w": 512,
+        "h": 129
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 256
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "challenges/progress/progressbar_circlefill": {
+      "frame": {
+        "x": 837,
+        "y": 1692,
+        "w": 124,
+        "h": 125
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 124,
+        "h": 125
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 125
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://github.com/odrick/free-tex-packer-core",
+    "version": "0.3.4",
+    "image": "main-atlas-0.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2000,
+      "h": 2048
+    },
+    "scale": 1
+  }
+}

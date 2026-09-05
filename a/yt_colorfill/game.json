@@ -1,0 +1,6 @@
+{
+  "title": "Color fill",
+  "version": "1.0",
+  "blurb": "Fill the pattern grid without crossing your own trail. 31 patterns plus quests.",
+  "splashTarget": "game.js"
+}
