@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>Go Escape</title>
+  <!-- This build ships no icon; declaring an empty one stops the browser
+       probing /favicon.ico and logging a 404. -->
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style/index.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      color: #e8e8ea;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      overscroll-behavior: none;
+    }
+
+    #game {
+      position: fixed;
+      inset: 0;
+      background: #000;
+    }
+
+    #game canvas {
+      display: block;
+      outline: none;
+      touch-action: none;
+    }
+
+    /* Plain backdrop only. The branded loading screen is baked into game.js,
+       so it paints over this within a frame. */
+    #loading-screen {
+      position: fixed;
+      inset: 0;
+      background: #231F20;
+      transition: opacity 600ms ease;
+      z-index: 10;
+    }
+
+    #loading-screen.finished {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #fullscreen-button {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 6px;
+      background: rgba(10, 10, 14, 0.55);
+      backdrop-filter: blur(6px);
+      color: rgba(232, 232, 234, 0.75);
+      font: inherit;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 350ms ease, border-color 200ms ease, color 200ms ease;
+    }
+
+    #fullscreen-button.visible { opacity: 1; }
+    #fullscreen-button:hover { border-color: rgba(255, 255, 255, 0.4); color: #fff; }
+    #fullscreen-button svg { width: 13px; height: 13px; fill: currentColor; }
+
+    body.is-fullscreen #fullscreen-button { opacity: 0; pointer-events: none; }
+    body.is-fullscreen #fullscreen-button:hover { opacity: 1; pointer-events: auto; }
+  </style>
+</head>
+
+<body>
+  <div id="game"></div>
+
+  <div id="loading-screen"></div>
+
+  <button id="fullscreen-button" type="button" title="Fullscreen (F)">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 3h7v2H5v5H3V3zm11 0h7v7h-2V5h-5V3zM3 14h2v5h5v2H3v-7zm16 0h2v7h-7v-2h5v-5z" />
+    </svg>
+    <span>Fullscreen</span>
+  </button>
+
+  <script src="ytgame.js"></script>
+  <script src="game.js"></script>
+  <script>
+    var stage = document.querySelector("#game");
+    var loadingScreen = document.querySelector("#loading-screen");
+    var fullscreenButton = document.querySelector("#fullscreen-button");
+
+    function isFullscreen() {
+      return Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+    }
+
+    function toggleFullscreen() {
+      if (isFullscreen()) {
+        var exit = document.exitFullscreen || document.webkitExitFullscreen;
+        if (exit) exit.call(document);
+        return;
+      }
+      var request = stage.requestFullscreen || stage.webkitRequestFullscreen;
+      if (!request) return;
+      var pending = request.call(stage, { navigationUI: "hide" });
+      if (pending && pending.catch) {
+        pending.catch(function (denied) {
+          console.warn("Fullscreen request denied", denied);
+        });
+      }
+    }
+
+    document.addEventListener("fullscreenchange", function () {
+      document.body.classList.toggle("is-fullscreen", isFullscreen());
+    });
+
+    fullscreenButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      toggleFullscreen();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.ctrlKey || event.altKey || event.metaKey) return;
+      if (!event.repeat && (event.key === "f" || event.key === "F")) {
+        toggleFullscreen();
+      }
+      // Stop the page itself from scrolling out from under the game.
+      if ([" ", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "PageUp", "PageDown"].indexOf(event.key) !== -1) {
+        event.preventDefault();
+      }
+    });
+
+    stage.addEventListener("contextmenu", function (event) {
+      event.preventDefault();
+    });
+
+    stage.addEventListener("dblclick", function () {
+      toggleFullscreen();
+    });
+
+    // This engine has no loader promise; the game announces itself through the
+    // SDK, which ytgame.js re-emits as a DOM event.
+    function reveal() {
+      loadingScreen.classList.add("finished");
+      fullscreenButton.classList.add("visible");
+      setTimeout(function () {
+        loadingScreen.style.display = "none";
+      }, 700);
+    }
+    document.addEventListener("ytplayable:ready", reveal);
+    document.addEventListener("ytplayable:firstframe", reveal);
+    // Never leave the backdrop stuck over a game that started without saying so.
+    setTimeout(reveal, 20000);
+
+    window.addEventListener("load", function () {
+      window.runGame();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script>(function(){
+var M={"StreamingAssets/AssetBundles/WebGL/planets": 2, "StreamingAssets/AssetBundles/WebGL/planets2": 2};var BASE=document.baseURI||location.href;
+var OF=window.fetch?window.fetch.bind(window):null;
+function keyFor(u){if(!u)return null;var s=String(u).split('?')[0].split('#')[0];
+for(var k in M){if(s.length>=k.length&&s.slice(s.length-k.length)===k)return {k:k,n:M[k]};}return null;}
+function abs(rel){try{return new URL(rel,BASE).href;}catch(e){return rel;}}
+function grab(k,n){var jobs=[];for(var i=0;i<n;i++){(function(i){jobs.push(OF(abs(k+'.part'+i)).then(function(r){return r.arrayBuffer();}));})(i);}
+return Promise.all(jobs).then(function(bufs){var tot=0,x;for(x=0;x<bufs.length;x++)tot+=bufs[x].byteLength;
+var out=new Uint8Array(tot),off=0;for(x=0;x<bufs.length;x++){out.set(new Uint8Array(bufs[x]),off);off+=bufs[x].byteLength;}return out.buffer;});}
+if(OF){window.fetch=function(input,init){var u=(typeof input==='string')?input:(input&&input.url);var kk=keyFor(u);
+if(!kk)return OF(input,init);return grab(kk.k,kk.n).then(function(buf){return new Response(buf,{status:200,headers:{'Content-Type':'application/octet-stream'}});});};}
+var XO=XMLHttpRequest.prototype.open,XS=XMLHttpRequest.prototype.send;
+XMLHttpRequest.prototype.open=function(m,u){this.__u=u;return XO.apply(this,arguments);};
+XMLHttpRequest.prototype.send=function(body){var xhr=this,kk=keyFor(this.__u);if(!kk)return XS.call(this,body);
+grab(kk.k,kk.n).then(function(buf){var rt=xhr.responseType,resp=(rt==='arraybuffer')?buf:(rt==='blob'?new Blob([buf]):new Uint8Array(buf));
+try{Object.defineProperty(xhr,'response',{configurable:true,get:function(){return resp;}});}catch(e){}
+try{Object.defineProperty(xhr,'status',{configurable:true,get:function(){return 200;}});}catch(e){}
+try{Object.defineProperty(xhr,'readyState',{configurable:true,get:function(){return 4;}});}catch(e){}
+try{Object.defineProperty(xhr,'responseURL',{configurable:true,get:function(){return abs(kk.k);}});}catch(e){}
+if(typeof xhr.onreadystatechange==='function')xhr.onreadystatechange();
+if(typeof xhr.onload==='function')xhr.onload();
+try{xhr.dispatchEvent(new Event('load'));}catch(e){}
+try{xhr.dispatchEvent(new Event('loadend'));}catch(e){}
+}).catch(function(){try{if(xhr.onerror)xhr.onerror();}catch(e){}});};
+})();</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Solar Smash</title>
+  <link rel="icon" href="TemplateData/unity-logo-dark.png">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      color: #e8e8ea;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      overscroll-behavior: none;
+    }
+
+    #unity-container {
+      position: fixed;
+      inset: 0;
+      background: #000;
+    }
+
+    #unity-canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      outline: none;
+      touch-action: none;
+    }
+
+    /* Plain backdrop only. The branded loading screen is baked into
+       Build/*.loader.js, so it paints over this within a frame. */
+    #loading-screen {
+      position: fixed;
+      inset: 0;
+      background: #231F20;
+      transition: opacity 600ms ease;
+      z-index: 10;
+    }
+
+    #loading-screen.finished {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #fullscreen-button {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 6px;
+      background: rgba(10, 10, 14, 0.55);
+      backdrop-filter: blur(6px);
+      color: rgba(232, 232, 234, 0.75);
+      font: inherit;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 350ms ease, border-color 200ms ease, color 200ms ease;
+    }
+
+    #fullscreen-button.visible { opacity: 1; }
+    #fullscreen-button:hover { border-color: rgba(255, 255, 255, 0.4); color: #fff; }
+    #fullscreen-button svg { width: 13px; height: 13px; fill: currentColor; }
+
+    body.is-fullscreen #fullscreen-button { opacity: 0; pointer-events: none; }
+    body.is-fullscreen #fullscreen-button:hover { opacity: 1; pointer-events: auto; }
+
+    #error-banner {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 32px;
+      background: #08080b;
+      text-align: center;
+    }
+
+    #error-banner h2 { margin: 0; font-weight: 400; letter-spacing: 0.1em; }
+    #error-banner p { margin: 0; max-width: 46ch; line-height: 1.6; color: rgba(232, 232, 234, 0.6); font-size: 14px; }
+  </style>
+</head>
+
+<body>
+  <div id="unity-container">
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
+  </div>
+
+  <div id="loading-screen"></div>
+
+  <button id="fullscreen-button" type="button" title="Fullscreen (F)">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 3h7v2H5v5H3V3zm11 0h7v7h-2V5h-5V3zM3 14h2v5h5v2H3v-7zm16 0h2v7h-7v-2h5v-5z" />
+    </svg>
+    <span>Fullscreen</span>
+  </button>
+
+  <div id="error-banner">
+    <h2>Solar Smash could not start</h2>
+    <p id="error-detail"></p>
+  </div>
+
+  <script src="ytgame.js"></script>
+  <script src="Build/SS-Youtube-0.1.3.loader.js"></script>
+  <script>
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingScreen = document.querySelector("#loading-screen");
+    var fullscreenButton = document.querySelector("#fullscreen-button");
+    var errorBanner = document.querySelector("#error-banner");
+    var errorDetail = document.querySelector("#error-detail");
+
+    // The Unity JS bridge calls unityGameInstance.SendMessage(...) by global name,
+    // so this has to live on window even though the page never reads it back.
+    window.unityGameInstance = null;
+
+    function showFatalError(message) {
+      errorDetail.textContent = message;
+      errorBanner.style.display = "flex";
+      loadingScreen.classList.add("finished");
+    }
+
+    // Engine warnings belong in the console rather than on top of the game.
+    function unityShowBanner(message, type) {
+      if (type === "error") console.error(message);
+      else console.warn(message);
+    }
+
+    var buildUrl = "Build";
+    var config = {
+      dataUrl: buildUrl + "/SS-Youtube-0.1.3.data.unityweb",
+      frameworkUrl: buildUrl + "/SS-Youtube-0.1.3.framework.js.unityweb",
+      codeUrl: buildUrl + "/SS-Youtube-0.1.3.wasm.unityweb",
+      streamingAssetsUrl: new URL("StreamingAssets", document.baseURI).href,
+      companyName: "Paradyme Games",
+      productName: "Solar Smash",
+      productVersion: "0.1.3",
+      showBanner: unityShowBanner,
+      // Progress lives in IndexedDB; let the engine flush it on every write
+      // rather than relying on the deprecated manual sync.
+      autoSyncPersistentDataPath: true
+    };
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      config.devicePixelRatio = 1;
+    }
+
+    function isFullscreen() {
+      return Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+    }
+
+    function toggleFullscreen() {
+      if (isFullscreen()) {
+        var exit = document.exitFullscreen || document.webkitExitFullscreen;
+        if (exit) exit.call(document);
+        return;
+      }
+      var request = container.requestFullscreen || container.webkitRequestFullscreen;
+      if (!request) return;
+      var pending = request.call(container, { navigationUI: "hide" });
+      if (pending && pending.catch) {
+        pending.catch(function (denied) {
+          console.warn("Fullscreen request denied", denied);
+        });
+      }
+    }
+
+    document.addEventListener("fullscreenchange", function () {
+      document.body.classList.toggle("is-fullscreen", isFullscreen());
+    });
+
+    fullscreenButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      toggleFullscreen();
+      canvas.focus();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.ctrlKey || event.altKey || event.metaKey) return;
+      if (!event.repeat && (event.key === "f" || event.key === "F")) {
+        toggleFullscreen();
+      }
+      // Stop the page itself from scrolling out from under the game.
+      if ([" ", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "PageUp", "PageDown"].indexOf(event.key) !== -1) {
+        event.preventDefault();
+      }
+    });
+
+    canvas.addEventListener("contextmenu", function (event) {
+      event.preventDefault();
+    });
+
+    canvas.addEventListener("dblclick", function () {
+      toggleFullscreen();
+    });
+
+    createUnityInstance(canvas, config).then(function (instance) {
+      window.unityGameInstance = instance;
+      loadingScreen.classList.add("finished");
+      fullscreenButton.classList.add("visible");
+      canvas.focus();
+      setTimeout(function () {
+        loadingScreen.style.display = "none";
+      }, 700);
+    }).catch(function (failure) {
+      console.error(failure);
+      showFatalError(String(failure && failure.message ? failure.message : failure));
+    });
+  </script>
+</body>
+
+</html>
