@@ -18,10 +18,6 @@
   // The smartlink popunder's exact Direct Link (kept as the site keeps it: base64 so the
   // advertiser host is not sitting in the markup for a filter to read).
   var POP = atob('aHR0cHM6Ly9yZXNlYXJjaGluZ3N3ZWF0ZXhpdC5jb20vbnZlcHcxanh1ZT9rZXk9YWI2NjhhMDlhMDNkNjFkMGEzOWU5NjQwOTkyMzA4M2I=')
-  // Our own copy of gtag.js on jsDelivr, so the analytics loader is not googletagmanager.com
-  // for a filter to catch. Falls back to Google's own url if our copy ever 404s.
-  var GTAG_SELF = 'https://cdn.jsdelivr.net/gh/freeedu-pixel/voidgames-21@main/a/shared/e2c4b019.js'
-
   var UNITS = {
     lead:  { key: '66c475d5203ae1e74a43cd60995dad8d', w: 728, h: 90 },
     wide:  { key: '0cfbec7c3ff4adab34ae356c3f48778d', w: 468, h: 60 },
@@ -32,29 +28,34 @@
 
   function rnd () { return 'x' + Math.random().toString(36).slice(2, 9) }
 
-  // ---------------------------------------------------------------- Google Analytics
+  // ---------------------------------------------------------------- Google Analytics (GA4)
+  // Sent with the Measurement Protocol straight to the collect endpoint, NOT gtag.js. The file
+  // the reader opens can be a local file (file://) or any host, and gtag.js refuses to send a
+  // hit from a file:// / null origin - measured, zero beacons. A plain request to /g/collect
+  // carries the same property id and lands in the same GA4 property from anywhere, and there is
+  // no googletagmanager.com in the page for a filter to catch.
   window.dataLayer = window.dataLayer || []
-  function gtag () { window.dataLayer.push(arguments) }
-  window.gtag = gtag
-  gtag('js', new Date())
-  gtag('config', GA, { transport_type: 'beacon' })
-  ;(function () {
-    var s = document.createElement('script')
-    s.async = true; s.src = GTAG_SELF
-    s.onerror = function () {
-      var g = document.createElement('script')
-      g.async = true; g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA
-      document.head.appendChild(g)
-    }
-    document.head.appendChild(s)
-  }())
-  // One id, one user, a view per game. Called by the app when a game opens.
+  window.gtag = function () { window.dataLayer.push(arguments) }
+  var CID = (function () { try { var c = localStorage.getItem('v-cid'); if (!c) { c = Math.floor(Math.random() * 1e10) + '.' + Math.floor(Date.now() / 1000); localStorage.setItem('v-cid', c) } return c } catch (e) { return Math.floor(Math.random() * 1e10) + '.' + Math.floor(Date.now() / 1000) } }())
+  var SID = (function () { try { var s = sessionStorage.getItem('v-sid'); if (!s) { s = '' + Math.floor(Date.now() / 1000); sessionStorage.setItem('v-sid', s) } return s } catch (e) { return '' + Math.floor(Date.now() / 1000) } }())
+  var seq = 0
+  function gaHit (en, extra) {
+    seq++
+    var p = 'v=2&tid=' + GA + '&cid=' + encodeURIComponent(CID) + '&sid=' + SID + '&sct=1&seg=1&_p=' + Math.floor(Math.random() * 1e9) + '&_s=' + seq + '&en=' + encodeURIComponent(en)
+    try { if (navigator.language) p += '&ul=' + encodeURIComponent(navigator.language.toLowerCase()) } catch (e) {}
+    try { p += '&sr=' + screen.width + 'x' + screen.height } catch (e) {}
+    if (extra) { for (var k in extra) { if (extra[k] != null) p += '&' + k + '=' + encodeURIComponent(extra[k]) } }
+    var url = 'https://www.google-analytics.com/g/collect?' + p
+    try { if (navigator.sendBeacon && navigator.sendBeacon(url)) return } catch (e) {}
+    try { (new Image()).src = url } catch (e) {}
+  }
+  // First view of the site.
+  gaHit('page_view', { dl: location.href, dt: document.title || 'Void Nano', dr: document.referrer || '' })
+  // One id, one user, a view per game across EVERY game. Called by the app when a game opens.
   window.__vnTrack = function (name) {
-    try {
-      var path = '/g/' + encodeURIComponent(String(name || 'game'))
-      gtag('event', 'page_view', { page_title: String(name || 'game'), page_path: path, page_location: location.origin + path })
-      gtag('event', 'game_open', { game_name: String(name || 'game') })
-    } catch (e) {}
+    var n = String(name || 'game')
+    gaHit('page_view', { dl: location.origin + '/g/' + encodeURIComponent(n), dt: n })
+    gaHit('game_open', { 'ep.game_name': n })
   }
 
   // ---------------------------------------------------------------- Adsterra banners
@@ -81,7 +82,11 @@
   }
   function fill (host) {
     var slot = host.getAttribute('data-vslot') || 'lead'
-    var w = host.clientWidth || host.offsetWidth || innerWidth
+    // A full-width top rail measures its own width unreliably before layout settles; the
+    // leaderboard is the viewport's width, so size it off that.
+    var rect = 0
+    try { rect = host.getBoundingClientRect().width || 0 } catch (e) {}
+    var w = slot === 'lead' ? Math.max(rect, host.clientWidth || 0, innerWidth - 44) : (rect || host.clientWidth || innerWidth)
     var u = unitFor(slot, w)
     host.textContent = ''
     var cls = rnd()
