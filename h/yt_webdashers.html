@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
@@ -19,12 +18,10 @@
             font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
             overscroll-behavior: none;
         }
-
         body > canvas {
             display: block;
             touch-action: none;
         }
-
         /* Plain backdrop only. The branded loading screen is baked into
            assets/scripts/core/main.js, so it paints over this within a frame
            and then hands off to the game's own loading screen. */
@@ -35,12 +32,10 @@
             transition: opacity 600ms ease;
             z-index: 10;
         }
-
         #loading-screen.finished {
             opacity: 0;
             pointer-events: none;
         }
-
         #fullscreen-button {
             position: fixed;
             right: 16px;
@@ -62,16 +57,12 @@
             opacity: 0;
             transition: opacity 350ms ease, border-color 200ms ease, color 200ms ease;
         }
-
         #fullscreen-button.visible { opacity: 1; }
         #fullscreen-button:hover { border-color: rgba(255, 255, 255, 0.4); color: #fff; }
         #fullscreen-button svg { width: 13px; height: 13px; fill: currentColor; }
-
         body.is-fullscreen #fullscreen-button { opacity: 0; pointer-events: none; }
         body.is-fullscreen #fullscreen-button:hover { opacity: 1; pointer-events: auto; }
     </style>
-
-    <!-- Libraries and stuff -->
     <script src="assets/scripts/game/allObjects.js?latest"></script>
     <script src="assets/scripts/game/allLevels.js"></script>
     <script src="assets/scripts/libs/phaser.min.js"></script>
@@ -80,10 +71,7 @@
     <script src="assets/scripts/api/GDapiWrapper.js"></script>
     <script src="assets/scripts/utils/api-config.js?v=2"></script>
     <script src="assets/scripts/api/account-api.js"></script>
-    <!-- worker -->
-    <script>
-        window._gdProxyUrl = "https://gd-proxy.gmdc.workers.dev";
-    </script>
+    <script>window._gdProxyUrl="https://gd-proxy.gmdc.workers.dev";</script>
     <script defer src="assets/scripts/utils/config.js"></script>
     <script defer src="assets/scripts/core/triggers.js"></script>
     <script defer src="assets/scripts/core/level.js?latest"></script>
@@ -93,88 +81,16 @@
     <script defer src="assets/scripts/core/level-editor.js?latest"></script>
     <script defer src="assets/scripts/core/game-scene.js?latest3"></script>
     <script defer src="assets/scripts/core/main.js"></script>
-    <script>
-        new ResizeObserver(() => {
-            window.dispatchEvent(new Event('resize'));
-        }).observe(document.documentElement);
-
-        document.oncontextmenu = (event) => {
-            event.preventDefault();
-        };
-    </script>
+    <script>new ResizeObserver(()=>{window.dispatchEvent(new Event("resize"))}).observe(document.documentElement);document.oncontextmenu=event=>{event.preventDefault()};</script>
 </head>
-
 <body>
     <div id="loading-screen"></div>
-
     <button id="fullscreen-button" type="button" title="Fullscreen (F)">
         <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3 3h7v2H5v5H3V3zm11 0h7v7h-2V5h-5V3zM3 14h2v5h5v2H3v-7zm16 0h2v7h-7v-2h5v-5z" />
         </svg>
         <span>Fullscreen</span>
     </button>
-
-    <script>
-        (function () {
-            var loadingScreen = document.querySelector("#loading-screen");
-            var fullscreenButton = document.querySelector("#fullscreen-button");
-
-            function isFullscreen() {
-                return Boolean(document.fullscreenElement || document.webkitFullscreenElement);
-            }
-
-            function toggleFullscreen() {
-                var root = document.documentElement;
-                if (isFullscreen()) {
-                    var exit = document.exitFullscreen || document.webkitExitFullscreen;
-                    if (exit) exit.call(document);
-                    return;
-                }
-                var request = root.requestFullscreen || root.webkitRequestFullscreen;
-                if (!request) return;
-                var pending = request.call(root, { navigationUI: "hide" });
-                if (pending && pending.catch) {
-                    pending.catch(function (denied) {
-                        console.warn("Fullscreen request denied", denied);
-                    });
-                }
-            }
-
-            document.addEventListener("fullscreenchange", function () {
-                document.body.classList.toggle("is-fullscreen", isFullscreen());
-                window.dispatchEvent(new Event("resize"));
-            });
-
-            fullscreenButton.addEventListener("click", function (event) {
-                event.preventDefault();
-                toggleFullscreen();
-            });
-
-            // The game owns most keys, so only F is claimed and only when no
-            // text field has focus (the level editor and search use inputs).
-            document.addEventListener("keydown", function (event) {
-                if (event.ctrlKey || event.altKey || event.metaKey || event.repeat) return;
-                var el = document.activeElement;
-                var typing = el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.isContentEditable);
-                if (!typing && (event.key === "f" || event.key === "F")) toggleFullscreen();
-            });
-
-            // Phaser appends its canvas to the body; reveal once it exists.
-            function reveal() {
-                loadingScreen.classList.add("finished");
-                fullscreenButton.classList.add("visible");
-                setTimeout(function () { loadingScreen.style.display = "none"; }, 700);
-            }
-            var waitForCanvas = setInterval(function () {
-                if (document.querySelector("body > canvas")) {
-                    clearInterval(waitForCanvas);
-                    reveal();
-                }
-            }, 100);
-            // Never leave the backdrop stuck over a game that started anyway.
-            setTimeout(function () { clearInterval(waitForCanvas); reveal(); }, 20000);
-        }());
-    </script>
+    <script>(function(){var loadingScreen=document.querySelector("#loading-screen");var fullscreenButton=document.querySelector("#fullscreen-button");function isFullscreen(){return Boolean(document.fullscreenElement||document.webkitFullscreenElement)}function toggleFullscreen(){var root=document.documentElement;if(isFullscreen()){var exit=document.exitFullscreen||document.webkitExitFullscreen;if(exit)exit.call(document);return}var request=root.requestFullscreen||root.webkitRequestFullscreen;if(!request)return;var pending=request.call(root,{navigationUI:"hide"});if(pending&&pending.catch){pending.catch(function(denied){console.warn("Fullscreen request denied",denied)})}}document.addEventListener("fullscreenchange",function(){document.body.classList.toggle("is-fullscreen",isFullscreen());window.dispatchEvent(new Event("resize"))});fullscreenButton.addEventListener("click",function(event){event.preventDefault();toggleFullscreen()});document.addEventListener("keydown",function(event){if(event.ctrlKey||event.altKey||event.metaKey||event.repeat)return;var el=document.activeElement;var typing=el&&(el.tagName==="INPUT"||el.tagName==="TEXTAREA"||el.isContentEditable);if(!typing&&(event.key==="f"||event.key==="F"))toggleFullscreen()});function reveal(){loadingScreen.classList.add("finished");fullscreenButton.classList.add("visible");setTimeout(function(){loadingScreen.style.display="none"},700)}var waitForCanvas=setInterval(function(){if(document.querySelector("body > canvas")){clearInterval(waitForCanvas);reveal()}},100);setTimeout(function(){clearInterval(waitForCanvas);reveal()},2e4)})();</script>
 </body>
-
 </html>

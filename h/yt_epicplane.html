@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
@@ -18,13 +17,11 @@
       font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
       overscroll-behavior: none;
     }
-
     #unity-container {
       position: fixed;
       inset: 0;
       background: #000;
     }
-
     #unity-canvas {
       display: block;
       width: 100%;
@@ -33,7 +30,6 @@
       outline: none;
       touch-action: none;
     }
-
     /* Plain backdrop only. The branded loading screen is baked into
        Build/Build.loader.js, so it paints over this within a frame. */
     #loading-screen {
@@ -43,12 +39,10 @@
       transition: opacity 600ms ease;
       z-index: 10;
     }
-
     #loading-screen.finished {
       opacity: 0;
       pointer-events: none;
     }
-
     #fullscreen-button {
       position: fixed;
       right: 16px;
@@ -70,14 +64,11 @@
       opacity: 0;
       transition: opacity 350ms ease, border-color 200ms ease, color 200ms ease;
     }
-
     #fullscreen-button.visible { opacity: 1; }
     #fullscreen-button:hover { border-color: rgba(255, 255, 255, 0.4); color: #fff; }
     #fullscreen-button svg { width: 13px; height: 13px; fill: currentColor; }
-
     body.is-fullscreen #fullscreen-button { opacity: 0; pointer-events: none; }
     body.is-fullscreen #fullscreen-button:hover { opacity: 1; pointer-events: auto; }
-
     #error-banner {
       position: fixed;
       inset: 0;
@@ -91,138 +82,27 @@
       background: #08080b;
       text-align: center;
     }
-
     #error-banner h2 { margin: 0; font-weight: 400; letter-spacing: 0.1em; }
     #error-banner p { margin: 0; max-width: 46ch; line-height: 1.6; color: rgba(232, 232, 234, 0.6); font-size: 14px; }
   </style>
 </head>
-
 <body>
   <div id="unity-container">
     <canvas id="unity-canvas" tabindex="-1"></canvas>
   </div>
-
   <div id="loading-screen"></div>
-
   <button id="fullscreen-button" type="button" title="Fullscreen (F)">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M3 3h7v2H5v5H3V3zm11 0h7v7h-2V5h-5V3zM3 14h2v5h5v2H3v-7zm16 0h2v7h-7v-2h5v-5z" />
     </svg>
     <span>Fullscreen</span>
   </button>
-
   <div id="error-banner">
     <h2>Epic Plane Evolution could not start</h2>
     <p id="error-detail"></p>
   </div>
-
   <script src="ytgame.js"></script>
   <script src="Build/Build.loader.js"></script>
-  <script>
-    var container = document.querySelector("#unity-container");
-    var canvas = document.querySelector("#unity-canvas");
-    var loadingScreen = document.querySelector("#loading-screen");
-    var fullscreenButton = document.querySelector("#fullscreen-button");
-    var errorBanner = document.querySelector("#error-banner");
-    var errorDetail = document.querySelector("#error-detail");
-
-    // The Unity JS bridge calls unityGameInstance.SendMessage(...) by global name,
-    // so this has to live on window even though the page never reads it back.
-    window.unityGameInstance = null;
-
-    function showFatalError(message) {
-      errorDetail.textContent = message;
-      errorBanner.style.display = "flex";
-      loadingScreen.classList.add("finished");
-    }
-
-    // Engine warnings belong in the console rather than on top of the game.
-    function unityShowBanner(message, type) {
-      if (type === "error") console.error(message);
-      else console.warn(message);
-    }
-
-    var buildUrl = "Build";
-    var config = {
-      dataUrl: buildUrl + "/Build.data.unityweb",
-      frameworkUrl: buildUrl + "/Build.framework.js.unityweb",
-      codeUrl: buildUrl + "/Build.wasm.unityweb",
-      streamingAssetsUrl: new URL("StreamingAssets", document.baseURI).href,
-      companyName: "Voodoo",
-      productName: "Epic Plane",
-      productVersion: "1.6.3",
-      showBanner: unityShowBanner,
-      // Progress lives in IndexedDB; let the engine flush it on every write
-      // rather than relying on the deprecated manual sync.
-      autoSyncPersistentDataPath: true
-    };
-
-    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-      config.devicePixelRatio = 1;
-    }
-
-    function isFullscreen() {
-      return Boolean(document.fullscreenElement || document.webkitFullscreenElement);
-    }
-
-    function toggleFullscreen() {
-      if (isFullscreen()) {
-        var exit = document.exitFullscreen || document.webkitExitFullscreen;
-        if (exit) exit.call(document);
-        return;
-      }
-      var request = container.requestFullscreen || container.webkitRequestFullscreen;
-      if (!request) return;
-      var pending = request.call(container, { navigationUI: "hide" });
-      if (pending && pending.catch) {
-        pending.catch(function (denied) {
-          console.warn("Fullscreen request denied", denied);
-        });
-      }
-    }
-
-    document.addEventListener("fullscreenchange", function () {
-      document.body.classList.toggle("is-fullscreen", isFullscreen());
-    });
-
-    fullscreenButton.addEventListener("click", function (event) {
-      event.preventDefault();
-      toggleFullscreen();
-      canvas.focus();
-    });
-
-    document.addEventListener("keydown", function (event) {
-      if (event.ctrlKey || event.altKey || event.metaKey) return;
-      if (!event.repeat && (event.key === "f" || event.key === "F")) {
-        toggleFullscreen();
-      }
-      // Stop the page itself from scrolling out from under the game.
-      if ([" ", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "PageUp", "PageDown"].indexOf(event.key) !== -1) {
-        event.preventDefault();
-      }
-    });
-
-    canvas.addEventListener("contextmenu", function (event) {
-      event.preventDefault();
-    });
-
-    canvas.addEventListener("dblclick", function () {
-      toggleFullscreen();
-    });
-
-    createUnityInstance(canvas, config).then(function (instance) {
-      window.unityGameInstance = instance;
-      loadingScreen.classList.add("finished");
-      fullscreenButton.classList.add("visible");
-      canvas.focus();
-      setTimeout(function () {
-        loadingScreen.style.display = "none";
-      }, 700);
-    }).catch(function (failure) {
-      console.error(failure);
-      showFatalError(String(failure && failure.message ? failure.message : failure));
-    });
-  </script>
+  <script>var container=document.querySelector("#unity-container");var canvas=document.querySelector("#unity-canvas");var loadingScreen=document.querySelector("#loading-screen");var fullscreenButton=document.querySelector("#fullscreen-button");var errorBanner=document.querySelector("#error-banner");var errorDetail=document.querySelector("#error-detail");window.unityGameInstance=null;function showFatalError(message){errorDetail.textContent=message;errorBanner.style.display="flex";loadingScreen.classList.add("finished")}function unityShowBanner(message,type){if(type==="error")console.error(message);else console.warn(message)}var buildUrl="Build";var config={dataUrl:buildUrl+"/Build.data.unityweb",frameworkUrl:buildUrl+"/Build.framework.js.unityweb",codeUrl:buildUrl+"/Build.wasm.unityweb",streamingAssetsUrl:new URL("StreamingAssets",document.baseURI).href,companyName:"Voodoo",productName:"Epic Plane",productVersion:"1.6.3",showBanner:unityShowBanner,autoSyncPersistentDataPath:true};if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){config.devicePixelRatio=1}function isFullscreen(){return Boolean(document.fullscreenElement||document.webkitFullscreenElement)}function toggleFullscreen(){if(isFullscreen()){var exit=document.exitFullscreen||document.webkitExitFullscreen;if(exit)exit.call(document);return}var request=container.requestFullscreen||container.webkitRequestFullscreen;if(!request)return;var pending=request.call(container,{navigationUI:"hide"});if(pending&&pending.catch){pending.catch(function(denied){console.warn("Fullscreen request denied",denied)})}}document.addEventListener("fullscreenchange",function(){document.body.classList.toggle("is-fullscreen",isFullscreen())});fullscreenButton.addEventListener("click",function(event){event.preventDefault();toggleFullscreen();canvas.focus()});document.addEventListener("keydown",function(event){if(event.ctrlKey||event.altKey||event.metaKey)return;if(!event.repeat&&(event.key==="f"||event.key==="F")){toggleFullscreen()}if([" ","ArrowUp","ArrowDown","ArrowLeft","ArrowRight","PageUp","PageDown"].indexOf(event.key)!==-1){event.preventDefault()}});canvas.addEventListener("contextmenu",function(event){event.preventDefault()});canvas.addEventListener("dblclick",function(){toggleFullscreen()});createUnityInstance(canvas,config).then(function(instance){window.unityGameInstance=instance;loadingScreen.classList.add("finished");fullscreenButton.classList.add("visible");canvas.focus();setTimeout(function(){loadingScreen.style.display="none"},700)}).catch(function(failure){console.error(failure);showFatalError(String(failure&&failure.message?failure.message:failure))});</script>
 </body>
-
 </html>
